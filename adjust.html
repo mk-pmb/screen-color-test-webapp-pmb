@@ -3,26 +3,27 @@
   <title>Adjust Screen Colors</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head><body>
-<form>
-  <input type="radio" name="ctrl-pos" id="c-nw" checked="checked"><var></var>
-  <input type="radio" name="ctrl-pos" id="c-ne"><var></var>
-  <input type="radio" name="ctrl-pos" id="c-sw"><var></var>
-  <input type="radio" name="ctrl-pos" id="c-se"><var></var>
+<form method="get" action="nope://">
+  <input type="radio" name="ctrl-pos" id="c-center" checked="checked">
+  <input type="radio" name="ctrl-pos" id="c-nw">
+  <input type="radio" name="ctrl-pos" id="c-ne">
+  <input type="radio" name="ctrl-pos" id="c-sw">
+  <input type="radio" name="ctrl-pos" id="c-se">
 
-  <input type="checkbox" id="c-r" checked="checked"><var></var>
-  <input type="checkbox" id="c-g" checked="checked"><var></var>
-  <input type="checkbox" id="c-b" checked="checked"><var></var>
+  <input type="checkbox" id="c-r" checked="checked">
+  <input type="checkbox" id="c-g" checked="checked">
+  <input type="checkbox" id="c-b" checked="checked">
 
-  <input type="radio" name="pattern" id="p-h"><var></var>
-  <input type="radio" name="pattern" id="p-v"><var></var>
-  <input type="radio" name="pattern" id="p-s" checked="checked"><var></var>
+  <input type="radio" name="pattern" id="p-h">
+  <input type="radio" name="pattern" id="p-v">
+  <input type="radio" name="pattern" id="p-s" checked="checked">
 
   <div class="fill" id="bg">
     <p class="fill h"></p>
     <p class="fill v"></p>
     <p class="fill s"></p>
   </div>
-  <div id="ctrl">
+  <div id="ctrl"><div class="center">
     <label for="c-nw"><i style="top: -22px; left: -44px;"></i></label>
     <label for="p-h"><i style="top: -22px; left: 0px;"></i></label>
     <label for="p-v"><i style="top: -22px; left: -22px;"></i></label>
@@ -35,6 +36,6 @@
     <label for="c-b"><i style="top: 0px; left: -66px;"></i></label>
     <label for="c-se"><i style="top: -44px; left: -66px;"></i></label>
     <hr>
-  </div>
+  </div></div>
 </form>
 </body></html>

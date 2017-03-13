@@ -39,6 +39,8 @@ label i {
 }
 
 #ctrl { position: absolute; padding: 2px; }
+#c-center:checked ~ #ctrl { right: 50%; bottom: 50%; }
+#c-center:checked ~ #ctrl .center { position: relative; top: 100%; left: 50%; }
 #c-nw:checked ~ #ctrl, #c-ne:checked ~ #ctrl { top:     0px; }
 #c-sw:checked ~ #ctrl, #c-se:checked ~ #ctrl { bottom:  0px; }
 #c-nw:checked ~ #ctrl, #c-sw:checked ~ #ctrl { left:    0px; }
@@ -58,7 +60,7 @@ input:checked { border: 2px solid green; }
 #c-r:checked ~ #c-b:checked ~ #bg { background-color: magenta; }
 #c-r:checked ~ #c-g:checked ~ #c-b:checked ~ #bg { background-color: white; }
 
-#bg p { display: none; }
+#bg p { display: none; background-position: center center; }
 #bg p.h { background-image: url("img/scale-h.svg"); }
 #bg p.v { background-image: url("img/scale-v.svg"); }
 #bg p.s { background-image: url("img/squares.svg"); }
