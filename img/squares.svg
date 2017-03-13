@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+  x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+<defs>
+  <pattern id="dither0" patternUnits="userSpaceOnUse" width="2" height="2">
+    <rect x="0" y="0" width="1" height="1" fill="black" />
+    <rect x="1" y="1" width="1" height="1" fill="black" />
+  </pattern>
+  <pattern id="dither1" patternUnits="userSpaceOnUse" width="2" height="2">
+    <rect x="0" y="1" width="1" height="1" fill="black" />
+    <rect x="1" y="0" width="1" height="1" fill="black" />
+  </pattern>
+  <symbol id="half-dark-border">
+    <g opacity="0.5">
+      <rect x="0" y="0" width="10%" height="50%" fill="black" />
+      <rect x="40%" y="0" width="10%" height="50%" fill="black" />
+      <rect x="10%" y="0" width="30%" height="10%" fill="black" />
+      <rect x="10%" y="40%" width="30%" height="10%" fill="black" />
+    </g>
+  </symbol>
+  <symbol id="contrast-0-100">
+    <use xlink:href="#half-dark-border" />
+    <rect x="10%" y="10%" width="30%" height="30%" fill="url(#dither0)" />
+  </symbol>
+  <symbol id="contrast-25-75">
+    <use xlink:href="#half-dark-border" />
+    <g opacity="0.25">
+      <rect x="10%" y="10%" width="30%" height="30%" fill="url(#dither0)" /></g>
+    <g opacity="0.75">
+      <rect x="10%" y="10%" width="30%" height="30%" fill="url(#dither1)" /></g>
+  </symbol>
+</defs>
+
+<!-- rect x="0" y="0" width="100%" height="100%" fill="yellow" / -->
+<use xlink:href="#contrast-0-100" />
+<g transform="translate(100 100)"><use xlink:href="#contrast-0-100" /></g>
+<g transform="translate(0 100)"><use xlink:href="#contrast-25-75" /></g>
+<g transform="translate(100 0)"><use xlink:href="#contrast-25-75" /></g>
+
+</svg>

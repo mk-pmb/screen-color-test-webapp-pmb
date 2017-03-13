@@ -1,0 +1,86 @@
+﻿@charset "UTF-8";
+/* -*- coding: UTF-8, tab-width: 2 -*- */
+
+html, body, .fill {
+  position: absolute;
+  display: block;
+  top:    0px;
+  left:   0px;
+  right:  0px;
+  bottom: 0px;
+  margin: 0px;
+}
+
+#bg { background-color: black; top: 0px; }
+
+label {
+  display: block;
+  float: left;
+  margin: 2px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border: 1px solid black;
+  overflow: hidden;
+}
+label i {
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-image: url("img/icons.png");
+  background-repeat: no-repeat;
+}
+
+#ctrl hr {
+  border-width: 0px;
+  height: 0px;
+  clear: both;
+}
+
+#ctrl { position: absolute; padding: 2px; }
+#c-nw:checked ~ #ctrl, #c-ne:checked ~ #ctrl { top:     0px; }
+#c-sw:checked ~ #ctrl, #c-se:checked ~ #ctrl { bottom:  0px; }
+#c-nw:checked ~ #ctrl, #c-sw:checked ~ #ctrl { left:    0px; }
+#c-ne:checked ~ #ctrl, #c-se:checked ~ #ctrl { right:   0px; }
+
+input+var { background-color: blue; padding-right: 1ex; }
+input+var:after { content: "\A0 "; }
+input:checked+var { background-color: yellow; }
+
+input:checked { border: 2px solid green; }
+
+#c-r:checked ~ #bg { background-color: red; }
+#c-g:checked ~ #bg { background-color: lime; }
+#c-b:checked ~ #bg { background-color: blue; }
+#c-r:checked ~ #c-g:checked ~ #bg { background-color: yellow; }
+#c-g:checked ~ #c-b:checked ~ #bg { background-color: cyan; }
+#c-r:checked ~ #c-b:checked ~ #bg { background-color: magenta; }
+#c-r:checked ~ #c-g:checked ~ #c-b:checked ~ #bg { background-color: white; }
+
+#bg p { display: none; }
+#bg p.h { background-image: url("img/scale-h.svg"); }
+#bg p.v { background-image: url("img/scale-v.svg"); }
+#bg p.s { background-image: url("img/squares.svg"); }
+
+#p-h:checked ~ #bg p.h { display: block; }
+#p-v:checked ~ #bg p.v { display: block; }
+#p-s:checked ~ #bg p.s { display: block; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*scroll*/
