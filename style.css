@@ -38,13 +38,14 @@ label i {
   clear: both;
 }
 
-#ctrl { position: absolute; padding: 2px; }
-#c-center:checked ~ #ctrl { right: 50%; bottom: 50%; }
-#c-center:checked ~ #ctrl .center { position: relative; top: 100%; left: 50%; }
-#c-nw:checked ~ #ctrl, #c-ne:checked ~ #ctrl { top:     0px; }
-#c-sw:checked ~ #ctrl, #c-se:checked ~ #ctrl { bottom:  0px; }
-#c-nw:checked ~ #ctrl, #c-sw:checked ~ #ctrl { left:    0px; }
-#c-ne:checked ~ #ctrl, #c-se:checked ~ #ctrl { right:   0px; }
+#ctrl-area-limit { left: 140px; top: 62px; }
+#ctrl { position: absolute; transition: all 0.5s linear 0s; padding: 5px; }
+#ctrl>.wrap { width: 130px; height: 52px; }
+#c-center:checked ~ div #ctrl { right: 50%; bottom: 50%; }
+#c-nw:checked ~ div #ctrl, #c-ne:checked ~ div #ctrl { bottom:  100%; }
+#c-sw:checked ~ div #ctrl, #c-se:checked ~ div #ctrl { bottom:    0%; }
+#c-nw:checked ~ div #ctrl, #c-sw:checked ~ div #ctrl { right:   100%; }
+#c-ne:checked ~ div #ctrl, #c-se:checked ~ div #ctrl { right:     0%; }
 
 input+var { background-color: blue; padding-right: 1ex; }
 input+var:after { content: "\A0 "; }
