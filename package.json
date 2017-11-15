@@ -4,21 +4,23 @@
   "keywords": [ "adjust", "screen", "color" ],
 
   "author": "M.K. (https://github.com/mk-pmb)",
-  "homepage": "https://github.com/mk-pmb/screen-color-test-webapp-pmb-js#readme",
+  "homepage": "https://github.com/mk-pmb/screen-color-test-webapp-pmb#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mk-pmb/screen-color-test-webapp-pmb-js.git"
+    "url": "git+https://github.com/mk-pmb/screen-color-test-webapp-pmb.git"
   },
   "bugs": {
-    "url": "https://github.com/mk-pmb/screen-color-test-webapp-pmb-js/issues"
+    "url": "https://github.com/mk-pmb/screen-color-test-webapp-pmb/issues"
   },
 
   "private": true, "license": "ISC",
 
   "main": "serve.js",
+  "scripts": { "start": "node serve.js" },
   "dependencies": {
-    "absdir": "^1.0.1",
-    "ecstatic": "^0.5.3"
+    "absdir": "^1.0.5",
+    "ecstatic": "^0.5.3",
+    "http-listen": "^1.0.0"
   },
   "devDependencies": {},
 
