@@ -10,7 +10,7 @@ Mini-website that helps me adjust screen colors.
 
 Try it: [live on github][live-demo]
 
-  [live-demo]: https://mk-pmb.github.io/screen-color-test-webapp-pmb-js/adjust.html
+  [live-demo]: https://mk-pmb.github.io/screen-color-test-webapp-pmb/adjust.html
 
 
 
